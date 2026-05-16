@@ -1,4 +1,5 @@
 import './style.css';
+import heroArt from '../Image/inndeed-3d-profile-hero.png';
 
 const profile = {
   name: 'ดีดี จิรกิตติ์ วงศ์ศรีเพ็ง',
@@ -49,7 +50,7 @@ document.querySelector('#app').innerHTML = `
         <div class="orbit orbit-one"></div>
         <div class="orbit orbit-two"></div>
         <div class="profile-card">
-          <div class="portrait">
+          <div class="portrait" style="--portrait-art: url('${heroArt}')">
             <span>D</span>
           </div>
           <div class="card-lines">

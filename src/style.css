@@ -211,9 +211,11 @@ h2 {
   overflow: hidden;
   border-radius: 8px;
   background:
-    radial-gradient(circle at 30% 25%, rgba(255, 248, 237, 0.55), transparent 22%),
-    radial-gradient(circle at 70% 64%, rgba(249, 115, 22, 0.52), transparent 26%),
+    linear-gradient(160deg, rgba(23, 33, 28, 0.08), rgba(15, 118, 110, 0.18)),
+    var(--portrait-art),
     linear-gradient(145deg, #17211c, #0f766e 58%, #f97316);
+  background-position: center;
+  background-size: cover;
   transform: translateZ(36px);
 }
 
