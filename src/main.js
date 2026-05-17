@@ -1,8 +1,10 @@
 import './style.css';
-import heroArt from '../Image/inndeed-3d-profile-hero.png';
+import heroArt from '../Image/dede-beach-profile.jpeg';
 
 const profile = {
-  name: 'ดีดี จิรกิตติ์ วงศ์ศรีเพ็ง',
+  nickname: 'ดีดี',
+  firstName: 'จิรกิตติ์',
+  lastName: 'วงศ์ศรีเพ็ง',
   alias: 'ด๋อยเด๋าดึ๋ง',
   instagram: 'inndeed',
   film: '15+ IQ กระฉูด',
@@ -38,7 +40,11 @@ document.querySelector('#app').innerHTML = `
     <section class="hero" id="hero">
       <div class="hero-copy">
         <p class="eyebrow">Actor profile / 3D motion</p>
-        <h1>${profile.name}</h1>
+        <h1 class="profile-name" aria-label="${profile.nickname} ${profile.firstName} ${profile.lastName}">
+          <span>${profile.nickname}</span>
+          <span>${profile.firstName}</span>
+          <span>${profile.lastName}</span>
+        </h1>
         <p class="lead">${profile.summary}</p>
         <div class="hero-actions" aria-label="ช่องทางติดตาม">
           <a class="primary-button" href="https://www.instagram.com/${profile.instagram}/" target="_blank" rel="noreferrer">@${profile.instagram}</a>
